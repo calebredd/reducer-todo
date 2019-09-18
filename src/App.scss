@@ -2,14 +2,78 @@
   text-align: center;
 
 
-.App-header {
-  background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .App-header {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  form {
+    input {
+      background: gray;
+      color: white;
+    }
+
+    button {
+      color: white;
+      background: black;
+      margin: 3px;
+      border-radius: 5px;
+
+      &:hover {
+        background: gray;
+      }
+    }
+  }
+
+  .todoList {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+
+    .hide {
+      display: none;
+    }
+
+    .complete {
+      p {
+        text-decoration-line: line-through;
+      }
+    }
+
+    .todoItem {
+      display: flex;
+
+      button {
+        color: white;
+        background: black;
+        margin: 3px;
+        border-radius: 5px;
+      }
+
+      #remove:hover {
+        background: red;
+
+      }
+
+      #undo:hover {
+        background: yellow;
+        color: black;
+
+      }
+
+      #completed:hover {
+        background: green;
+
+      }
+
+    }
+  }
 
 }
